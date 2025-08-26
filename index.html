@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Biodata Siswa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    table {
+      border-collapse: collapse;
+      margin: 20px auto;
+      background-color: #f9f9f9;
+    }
+    td {
+      padding: 8px 12px;
+    }
+    th {
+      text-align: left;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+    }
+    input, select {
+      padding: 6px;
+      width: 100%;
+    }
+    .btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 8px 15px;
+      border: none;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">Form Biodata Siswa</h2>
+
+  <form>
+    <table border="1">
+      <tr>
+        <th colspan="2">Isi Biodata</th>
+      </tr>
+      <tr>
+        <td>Nama Siswa</td>
+        <td><input type="text" name="nama" placeholder="Masukkan nama"></td>
+      </tr>
+      <tr>
+        <td>Kelas</td>
+        <td>
+          <select name="kelas">
+            <option value="">-- Pilih Kelas --</option>
+            <option value="X RPL 1">X RPL 1</option>
+            <option value="X RPL 2">X RPL 2</option>
+            <option value="X RPL 3">X RPL 3</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Tanggal Lahir</td>
+        <td><input type="date" name="tanggal_lahir"></td>
+      </tr>
+      <tr>
+        <td>Jenis Kelamin</td>
+        <td>
+          <input type="radio" name="gender" value="Laki-laki"> Laki-laki
+          <input type="radio" name="gender" value="Perempuan"> Perempuan
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center;">
+          <button type="button" class="btn">Kirim</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Elemen Form HTML5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Contoh Form HTML5</h2>
+    <form>
+        <!-- Textbox untuk input teks sederhana -->
+        <label>Textbox:</label>
+        <input type="text" name="nama" placeholder="Nama,Email">
+
+        <!-- Textarea untuk input teks panjang -->
+        <label>TextArea:</label>
+        <textarea rows="4" placeholder="Alamat,Komentar"></textarea>
+
+        <!-- Selectbox untuk memilih satu opsi -->
+        <label for="kota">SelextBox:</label>
+        <select id="kota" name="kota">
+            <option value="">-- Pilih Kota,Negara,Kelas,Hari Bulan --</option>
+            <option value="jakarta">Jakarta</option>
+            <option value="bandung">Bandung</option>
+            <option value="surabaya">Surabaya</option>
+        </select>
+
+        <!-- Radiobutton untuk memilih satu opsi dari beberapa pilihan -->
+        <label>RadioButton:</label>
+        <input type="radio" id="laki" name="gender" value="laki">
+        <label for="laki">Laki-laki</label>
+        <input type="radio" id="perempuan" name="gender" value="perempuan">
+        <label for="perempuan">Perempuan</label>
+
+        <!-- Input Date untuk memilih tanggal -->
+        <label for="tanggal_lahir">Tanggal:</label>
+        <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+
+        <!-- Checkbox untuk memilih beberapa opsi -->
+        <label>CheckBox</label>
+        <input type="checkbox" id="membaca" name="hobi" value="membaca">
+        <label for="membaca">Membaca</label>
+        <input type="checkbox" id="olahraga" name="hobi" value="olahraga">
+        <label for="olahraga">Olahraga</label>
+        <input type="checkbox" id="musik" name="hobi" value="musik">
+        <label for="musik">Musik</label>
+
+        <!-- Password untuk input kata sandi -->
+        <label for="password">Kata Sandi:</label>
+        <input type="password" id="password" name="password" placeholder="Masukkan kata sandi">
+
+        <!-- Button untuk mengirim form -->
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>
